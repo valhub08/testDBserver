@@ -1,0 +1,18 @@
+spring:
+  #  sql:
+  #    init:
+  #      mode: never
+  #data.sql ?? X
+  jpa:
+    show-sql: true
+    properties:
+      hibernate:
+        format_sql: true
+    defer-datasource-initialization: true
+
+  datasource: #?????? ?? ??
+    url : jdbc:h2:mem:testDB2
+    username : root
+  h2: #H2 ?? ???
+    console:
+      enabled: true
