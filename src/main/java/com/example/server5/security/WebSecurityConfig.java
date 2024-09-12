@@ -59,6 +59,7 @@ public class WebSecurityConfig {
         authProvider.setUserDetailsService(userService); //사용자 정보 서비스 저장
         authProvider.setPasswordEncoder(bCryptPasswordEncoder);
         return new ProviderManager(authProvider);
+
     }
     @Bean
     public BCryptPasswordEncoder bCryptPasswordEncoder(){
